@@ -279,11 +279,30 @@
 	<div class="container">
 		<div class="subBody">
 			<h2>
-				<p class="title-sub">회원정보수정</p>
+				<p class="title-sub">매물상세</p>
 				<a href="" class="btnBack"><img src="../resource/images/btn/btn_back.png" alt="이전가기"></a>
 			</h2>
 
 			<div class="subCon">
+
+				<div class="sale-sequence">
+
+					<div class="sequence-item">
+						<div class="sequence-item-title">번호</div>
+						<div class="sequence-item-number">123456789</div>
+					</div>
+
+					<div class="sequence-item">
+						<div class="sequence-item-title">확인</div>
+						<div class="sequence-item-number">2015.05.23</div>
+					</div>
+
+					<div class="sequence-item">
+						<div class="sequence-item-title">등록</div>
+						<div class="sequence-item-number">2015.05.23</div>
+					</div>
+
+				</div>
 
 				<h3 class="part-title">기본 정보</h3>
 
@@ -474,7 +493,7 @@
 
 				<div class="part-mid">
 					<h4 class="table-title">&lt;가격정보&gt;</h4>
-					<table class="hr-table blue-border">
+					<table class="hr-table blue-border inner-table">
 						<caption class="hide">기본 정보</caption>
 						<colgroup>
 							<col style="width:40%;" />
@@ -499,7 +518,7 @@
 
 				<div class="part-mid">
 					<h4 class="table-title">&lt;담보대출&gt;</h4>
-					<table class="vt-table blue-border">
+					<table class="vt-table blue-border inner-table">
 						<caption class="hide">기본 정보</caption>
 						<colgroup>
 							<col style="width:33%;" />
@@ -513,26 +532,128 @@
 						</thead>
 						<tbody>
 						<tr>
-							<td>매매가</td>
-							<td>지하3층/지상15층</td>
-							<td>지하3층/지상15층</td>
+							<td>1금융</td>
+							<td>3.3%~4.3%</td>
+							<td>60%</td>
 						</tr>
 						<tr>
-							<td>대출금액</td>
-							<td>10개동</td>
-							<td>지하3층/지상15층</td>
+							<td>2금융</td>
+							<td>3.3%~4.3%</td>
+							<td>60%</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="part-mid">
+					<h4 class="table-title">&lt;세금/수수료&gt;</h4>
+					<table class="vt-table blue-border inner-table">
+						<caption class="hide">기본 정보</caption>
+						<colgroup>
+							<col style="width:33%;" />
+							<col style="width:34%;" />
+							<col style="width:33%;" />
+						</colgroup>
+						<thead>
+						<th scope="col">취득세</th>
+						<th scope="col">중개보수</th>
+						<th scope="col">등기비용</th>
+						</thead>
+						<tbody>
+						<tr>
+							<td>10,000,000만원</td>
+							<td>10,000,000만원</td>
+							<td>10,000,000만원</td>
 						</tr>
 						<tr>
-							<td>실투자금액</td>
-							<td>7,000세대</td>
-							<td>지하3층/지상15층</td>
+							<td>10,000,000만원</td>
+							<td>10,000,000만원</td>
+							<td>10,000,000만원</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h3 class="part-title">
+					<span>실거래가</span>
+					<a href="#" class="btn-box-link">이동</a>
+				</h3>
+
+				<div class="part-mid">
+					<table class="vt-table blue-border">
+						<caption class="hide">실거래가</caption>
+						<colgroup>
+							<col style="width:14%;" />
+							<col style="width:23%;" />
+							<col style="width:23%;" />
+							<col style="width:23%;" />
+							<col style="width:17%;" />
+						</colgroup>
+						<thead>
+						<th scope="col">구분</th>
+						<th scope="col">매매</th>
+						<th scope="col">전세</th>
+						<th scope="col">월세</th>
+						<th scope="col">전세율</th>
+						</thead>
+						<tbody>
+						<tr>
+							<td>평균</td>
+							<td>10,000,000</td>
+							<td>10,000,000</td>
+							<td>10,000,000 / 100,000</td>
+							<td>80.12%</td>
+						</tr>
+						<tr>
+							<td>최고가</td>
+							<td>10,000,000</td>
+							<td>10,000,000</td>
+							<td>10,000,000 / 100,000</td>
+							<td>80.12%</td>
+						</tr>
+						</tbody>
+					</table>
+
+					<div class="graph mt10">
+						<img src="../resource/images/sale/temp_graph.png" style="width:100%;" />
+					</div>
+
+					<p class="msg">※ 부동산챔프의 실거래가는 국토해양부에서 공개된 데이터를 통해 제공하고 있습니다.</p>
+				</div>
+
+				<h3 class="part-title">주변정보</h3>
+
+				<div class="part-mid">
+					<table class="hr-table blue-border">
+						<caption class="hide">주변정보</caption>
+						<colgroup>
+							<col style="width:40%;" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">지하철</th>
+							<td>지하철 2호선 선릉역 100m</td>
+						</tr>
+						<tr>
+							<th scope="row">버스</th>
+							<td>지하철 2호선 선릉역 100m</td>
+						</tr>
+						<tr>
+							<th scope="row">도로</th>
+							<td>지하철 2호선 선릉역 100m</td>
+						</tr>
+						<tr>
+							<th scope="row">어린이집</th>
+							<td>지하철 2호선 선릉역 100m</td>
 						</tr>
 						</tbody>
 					</table>
 				</div>
 
 				<div class="part-bottom30">
-					<button type="button" class="btn-fill blue" style="width:40%">확인</button>
+					<button type="button" class="btn-fill blue">주변 유사매물 보기</button>
+					<button type="button" class="btn-fill mt10">허위 매물 신고하기</button>
 				</div>
 
 			</div>
@@ -540,6 +661,11 @@
 	</div>
 	</section>
 	<!-- //컨텐츠 -->
+
+	<ul class="floating-menu">
+		<li class="floating-menu-list"><a href="#" class="ask"><b>icon</b>문의하기</a></li>
+		<li class="floating-menu-list"><a href="#" class="favorite"><b>icon</b>관심매물</a></li>
+	</ul>
 
 	<!-- 풋터 -->
 	<footer>

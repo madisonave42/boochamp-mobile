@@ -12,6 +12,10 @@
   padding:20px;
 }
 
+.hr-table.inner-table{
+  margin:0 0 20px 0;
+}
+
 .vt-table.blue-border{
   border-top:2px solid #28a7e1;
   border-bottom:0;
@@ -23,7 +27,11 @@
 }
 
 .vt-table.blue-border td{
-  padding:20px;
+  padding:20px 10px;
+}
+
+.vt-table.inner-table{
+  margin:0 0 20px 0;
 }
 
 .border-box{
@@ -61,6 +69,20 @@
   background:url(../images/sale/btn_box_toggle.png) no-repeat;
 }
 
+.btn-box-link{
+  width:17px;
+  height:30px;
+
+  position:absolute;
+  top:15px;
+  right:15px;
+
+  text-indent:-99999em;
+
+  border:0;
+  background:url(../images/sale/btn_box_link.png) no-repeat;
+}
+
 .btn-box-toggle.close{
   background-position:0 -23px;
 }
@@ -95,3 +117,92 @@
   border:0;
   background:#666;
 }
+
+.part-mid .msg{
+  font-size:22px;
+  text-align:left;
+  margin:10px 0 0 0;
+  line-height:1.4;
+}
+
+.floating-menu{
+  width:100%;
+  height:110px;
+
+  position:fixed;
+  left:0;
+  bottom:0;
+
+  padding:20px 0;
+
+  background:rgba(0,0,0,0.85);
+
+  box-sizing:border-box;
+  z-index:100;
+}
+
+.floating-menu .floating-menu-list{
+  width:50%;
+  float:left;
+
+  text-align:center;
+  line-height:70px;
+  box-sizing:border-box;
+}
+
+.floating-menu .floating-menu-list:first-child{
+  border-right:1px solid #515151;
+}
+
+.floating-menu .floating-menu-list .ask{
+  display:inline-block;
+  position:relative;
+  font-size:26px;
+  font-weight:bold;
+  color:#f8b62b;
+  line-height:normal;
+
+  padding:0 0 0 55px;
+}
+
+.floating-menu .floating-menu-list .ask b{
+  display:block;
+
+  width:51px;
+  height:41px;
+
+  position:absolute;
+  top:-3px;
+  left:0;
+
+  text-indent:-99999em;
+
+  background:url(../images/sale/bg_sale_floating_menu.png) no-repeat;
+}
+
+.floating-menu .floating-menu-list .favorite{
+  display:inline-block;
+  position:relative;
+  font-size:26px;
+  font-weight:bold;
+  color:#e60012;
+  line-height:normal;
+
+  padding:0 0 0 55px;
+}
+
+.floating-menu .floating-menu-list .favorite b{
+  display:block;
+
+  width:51px;
+  height:41px;
+
+  position:absolute;
+  top:-3px;
+  left:0;
+
+  text-indent:-99999em;
+
+  background:url(../images/sale/bg_sale_floating_menu.png) no-repeat -70px 0;
+}
+

@@ -384,8 +384,6 @@ label.css-label{
 
 .vt-table th {
   height: 80px;
-  text-align: left;
-  padding-left: 20px;
   font-weight: bold;
   color: #222;
   border-left: 2px solid #dcdcdc;
@@ -411,9 +409,8 @@ label.css-label{
   color: #999;
   border-bottom: 2px solid #dcdcdc;
   border-left: 2px solid #dcdcdc;
-  font-size:24px;
+  font-size:22px;
   line-height:30px;
-  text-align:left;
 }
 .vt-table td:first-child{
   border-left:0;
