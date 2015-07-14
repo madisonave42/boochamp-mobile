@@ -93,7 +93,7 @@ strong {
   width: 100%;
   height: 60px;
   padding-left: 18px;
-  color: #999;
+  color: #666;
   border: 1px solid #cbcbcb;
   -webkit-appearance: none; box-sizing:border-box; -webkit-box-sizing:border-box; border-radius:0px 0px;
   font-size:24px;
@@ -300,15 +300,27 @@ label.css-label{
 .dimmed.on {
   display: block;
 }
+.dimmed-pop {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  z-index: 999;
+}
+
+#layer-popup{position:fixed; left:5%; top:50%; z-index:9999; margin:-258px 0 0 0; background:#fff; border-radius:5px; height:auto; width:90%; padding:0 0 30px}
 
 
 
 /* table */
+.tbldiv{border-top: 4px solid #222; border-bottom: 2px solid #222;}
 .hr-table {
   width: 100%;
   table-layout: fixed;
-  border-top: 4px solid #222;
-  border-bottom: 2px solid #222;
 }
 .hr-table th {
   height: 80px;
@@ -358,6 +370,10 @@ label.css-label{
 .hr-table td .textarea.full-width {
   width: 95%;
 }
+.hr-table tr.last th, .hr-table tr.last td{
+  border-bottom: 0;
+}
+.hr-table td .address{display:block; padding:5px 19px 20px; line-height:35px}
 
 .vt-table{
   width: 100%;
@@ -519,7 +535,7 @@ label.css-label{
 
 .btn-fill {
   width: 100%;
-  height: 60px;
+  height: 70px;
   font-size: 24px;
   color: #fff;
   line-height: 24px;
@@ -562,7 +578,7 @@ label.css-label{
 /* select box */
 .styled-select_p{width:100%; border:1px solid #cbcbcb; height:60px; overflow: hidden; background:url('../images/btn/b_arrow.png') right center no-repeat; -webkit-appearance: none;
    box-sizing:border-box; -webkit-box-sizing:border-box;}
-.styled-select_p select{border:none; background: transparent; width:100%;  font-size:24px; color:#999; padding:0 20px; height:60px;  -webkit-appearance: none;}
+.styled-select_p select{border:none; background: transparent; width:100%;  font-size:24px; color:#666; padding:0 20px; height:60px;  -webkit-appearance: none;}
 
 
 
@@ -645,7 +661,7 @@ label.css-label{
 /* search */
 .header .form-search-button{cursor:pointer; position:absolute; top:18px; right:16px; height:55px; border-radius:30px; border:2px solid #ddd}
 .header .form-search-button .re_search_button{position:absolute; top:14px; right:19px;}
-.header .form-search-button .words{padding:18px 70px 0 20px; font-size:19px; color:#bbb;}
+.header .form-search-button .words{padding:18px 70px 0 20px; font-size:19px; color:#bbb; font-weight:bold}
 .header .form-search-button button{background:none; font-size:0; border:0}
 
 /* section */
@@ -653,8 +669,8 @@ section{text-align:center}
 
 /* footer */
 footer:after{content: "."; display: block; height:0; overflow:hidden; clear:both;}
-footer{position:relative; margin:0; text-align:center; padding:35px 76px; background:#38393a; line-height:32px; color:#aaa;}
-footer .footer-address{font-size:22px; line-height:32px;}
+footer{position:relative; margin:0; text-align:center; padding:35px 50px; background:#38393a; line-height:32px; color:#aaa;}
+footer .footer-address{font-size:22px !important; line-height:32px;}
 footer .copyright{padding:14px 0 0; font-size:18px}
 footer .blue{color:#25aae1;}
 
@@ -666,6 +682,12 @@ footer .blue{color:#25aae1;}
 .subBody .subCon{overflow:hidden; padding:30px; text-align:center; min-width:580px; margin:0 auto}
 
 .part-title{text-align:left; margin:40px 0 20px; font:bold 30px/40px NanumGothic; color:#222}
+
+
+/* btn */
+.part-bottom30 ul li{width:46.8%; height:70px; display:inline-block;}
+.part-bottom30 ul li:first-child{margin-right:10px}
+.part-bottom30 ul li .btn-fill{width:100%}
 
 
 

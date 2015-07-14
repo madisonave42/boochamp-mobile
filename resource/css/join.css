@@ -4,20 +4,17 @@
 
 
 /* step */
-.step-list{border:1px solid #ddd; height:81px; margin:0}
-.step-list li{float:left; font:bold 24px/24px NanumGothic; color:#999; width:11%; text-align:center; padding:30px 0 27px 20px; background: url('../images/icon/bg_step-arrow-off.png') no-repeat left 0;}
-.step-list li:first-child{background:none;}
-.step-list li.on{color:#fff; width:45%; padding-left:0; background:url('../images/icon/bg_step-arrow-on.png') no-repeat left 0, url('../images/icon/bg_step-arrow-on1.png') no-repeat right 0; background-color:#2dace2}
+.step-list:after{content: "."; display: block; height:0; overflow:hidden; clear:both;}
+.step-list{border:1px solid #ddd; height:81px; margin:0;}
+.step-list li{float:left; font:bold 24px/24px NanumGothic; color:#999; width:%; text-align:center; width:20%; padding:30px 0 27px 0; background: url('../images/icon/bg_step-arrow-off.png') no-repeat right 0;}
+.step-list li:last-child{background: none;}
+.step-list li.on{color:#fff; width:40%; background: url('../images/icon/bg_step-arrow-on1.png') no-repeat left 0, url('../images/icon/bg_step-arrow-on1.png') no-repeat right 0; background-color:#2dace2}
+.step-list li.bg-none{background: none !important;}
+.step-list li.first.on{background:#2dace2 url('../images/icon/bg_step-arrow-on1.png') no-repeat right 0 !important;}
 .step-list li.on a:hover{color:#fff;}
-.step-list li.off{background:none; padding-left:0;}
 
-.step-list02{border:1px solid #ddd; height:81px; margin:0}
-.step-list02 li{float:left; font:bold 24px/24px NanumGothic; color:#999; width:11%; text-align:center; padding:30px 0 27px 20px; background: url('../images/icon/bg_step-arrow-off.png') no-repeat left 0;}
-.step-list02 li:first-child{background:none;}
-.step-list02 li.on{color:#fff; width:50%; padding-left:0; background: url('../images/icon/bg_step-arrow-on1.png') no-repeat right 0; background-color:#2dace2}
-.step-list02 li.on a:hover{color:#fff;}
-.step-list02 li a{display:block}
-.step-list02 li.off{background:none; padding-left:0;}
+
+
 
 /* 가입방식 */
 .item-log-members:after{content: "."; display: block; height:0; overflow:hidden; clear:both;}
@@ -39,4 +36,26 @@
 .select-item-members-top .notice{margin:31px 0 0; line-height:39px; color:#666; font-size:24px;}
 .select-item-members-top .notice span{display:block; color:#222; font-weight:bold;}
 
+/* 멤버쉽 */
+.log-membership:after{content: "."; display: block; height:0; overflow:hidden; clear:both;}
+.log-membership .log-membership-wrap{position:relaitve;}
+.log-membership .log-membership-wrap .icon{background:url('../images/members/icon.png') no-repeat; display: inline-block; overflow: hidden; text-indent: 100%; white-space: nowrap; vertical-align: middle; font-size: 0;}
+.log-membership .log-membership-wrap .layer-close{position:absolute; right:30px; top:30px; background-position:-545px 0; border:0; width:29px; height:29px}
+.log-membership .log-membership-wrap .item-top .letter{position:absolute; left:50%; top:67px; margin:0 0 0 -39px; background-position:-429px 0; border:0; width:78px; height:59px}
+.log-membership .log-membership-wrap .item-top .complet{position:absolute; left:50%; top:67px; margin:0 0 0 -39px; background-position:-430px -79px; border:0; width:99px; height:99px}
+.log-membership .log-membership-wrap .item-top .title{display:block; padding:146px 0 0; text-align:center; color:#222; font-size:30px; font-weight:bold; line-height:40px}
+.log-membership .log-membership-wrap .item-top .notice01{display:block; text-align:center; font-size:24px; color:#222; line-height:35px; margin:23px 0 0}
+.log-membership .log-membership-wrap .item-top .notice01 .blue{color:#25aae1}
 
+
+/* 가입완료 */
+.item-congrate:after{content: "."; display: block; height:0; overflow:hidden; clear:both;}
+.item-congrate{position:relative; margin:31px 0 0; padding:310px 0 170px; border-top:4px solid #282828; border-bottom:2px solid #282828}
+.item-congrate .icon{background:url('../images/members/icon.png') no-repeat; display: inline-block; overflow: hidden; text-indent: 100%; white-space: nowrap; vertical-align: middle; font-size: 0;}
+.item-congrate .icon.item01{position:absolute; left:50%; top:120px; margin:0 0 0 -93px; background-position:-215px 0; border:0; width:186px; height:140px}
+.item-congrate .icon.item02{position:absolute; left:50%; top:120px; margin:0 0 0 -93px; background-position:-215px -153px; border:0; width:186px; height:140px}
+.item-congrate .title{font-size:30px; color:#222; font-weight:bold;}
+.item-congrate .notice{margin:23px 0 0 0; font-size:24px; color:#222; line-height:35px;}
+.item-congrate .notice .blue{color:#25aae1}
+
+/* 가입완료 확인 */

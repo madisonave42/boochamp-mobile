@@ -7,12 +7,15 @@
 .login-form .box-Yinput .gap.input-id{background: url('../images/icon/email.png') no-repeat 97% center;}
 .login-form .box-Yinput .gap.input-pw{background: url('../images/icon/password.png') no-repeat 97% center;}
 .login-form .box-Yinput .gap input{text-align:left; width:70%; color:#999; border:none; font-size:24px; height:36px; line-height:30px}
+.login-form .box-Yinput .already-email:after{content:"."; display:block; height:0; overflow:hidden; clear:both;}
+.login-form .box-Yinput .already-email{float:left; width:100%; margin:10px 0 20px; color:#25aae1; font-size:24px; font-weight:bold}
 
 .login-agree{margin:15px 0 0;}
 .login-agree:after{content:"."; display:block; height:0; overflow:hidden; clear:both;}
 .login-agree>div{margin:-5px 0 0}
 .login-agree-chk{float:left; margin:0; padding:0; height:30px; line-height:30px; vertical-align:middle}
 .login-agree-label{margin-left:50px; color:#999; height:17px; line-height:17px; font-size:22px; cursor:pointer;}
+.login-agree .btn-veiw{float:right; background:#cbcbcb; color:#fff; border:0; padding:8px 15px}
 
 .login-link{position:relative; margin-left:20px; padding-left:20px; color:#999; line-height:20px; font-size:22px; background: url('../images/icon/line01.png') no-repeat 0;}
 .login-links{display:inline-block; margin:10px 0 0; width:100%; position:relative}

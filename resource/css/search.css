@@ -37,7 +37,7 @@
 
 /* subway search result */
 .subway-result-link {display:block; padding:29px 30px 29px 50px; border-bottom:1px solid #d9d9d9;}
-.subway-result-link:after {content:""; display:block; clear:both;}
+.subway-result-link:after{content: "."; display: block; height:0; overflow:hidden; clear:both;}
 .subway-result-name {float:left; font-size:24px;}
 .subway-result-line-wrap {float:right;}
 .subway-result-line {float:left; margin:0 0 0 8px; padding:0 10px; height:30px; line-height:30px; font-size:22px; color:#fff; background:#003499; border-radius:15px;}
@@ -70,3 +70,14 @@
 .subway-result-line.gwangju-1 {background:#1d8405;}
 .subway-result-line.daejeon-1 {background:#37b42d;}
 
+.subway-result-map-wrap {position:relative; width:100%; padding:92% 0 0 0;}
+.subway-result-map {position:absolute; top:0; left:0; width:100%; height:100%;}
+
+/* subway distance popup */
+.subway-distance .subway-distance-wrap .layer-close{position:absolute; right:30px; top:30px; border:0; width:29px; height:29px; background:url(../images/btn/btn_close_layer.png) no-repeat; text-indent:-9999px;}
+.subway-distance .subway-distance-wrap .layer-popup-title{padding-left:30px; height:85px; line-height:85px; color:#000; font-size:30px; font-weight:bold; border-bottom:1px solid #d9d9d9;}
+.subway-distance .subway-distance-list{margin:30px 30px 0 30px;}
+.subway-distance .subway-distance-list:after{content:"."; display:block; height:0; overflow:hidden; clear:both;}
+.subway-distance .subway-distance-item{float:left; margin:0 0 0 2%; width:32%;}
+.subway-distance .subway-distance-item:first-child{margin:0;}
+.subway-distance .subway-distance-btn{display:block; padding:0; width:100%; height:82px; border:0; background:#25aae1; color:#fff; font-size:24px; font-weight:bold;}

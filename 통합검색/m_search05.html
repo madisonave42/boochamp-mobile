@@ -26,7 +26,27 @@
 
 <div class="wrapperDiv" style="left:0px;">
 
+	<div id="layer-popup">
+		<div class="subway-distance">
+			<div class="subway-distance-wrap">
+				<button type="button" class="icon layer-close">닫기</button>
+				<h1 class="layer-popup-title">거리선택</h1>
+				<ul class="subway-distance-list">
+					<li class="subway-distance-item">
+						<button class="subway-distance-btn">도보 5분</button>
+					</li>
+					<li class="subway-distance-item">
+						<button class="subway-distance-btn">도보 10분</button>
+					</li>
+					<li class="subway-distance-item">
+						<button class="subway-distance-btn">도보 15분</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
+	<div class="dimmed-pop"></div>
 
 
 <!-- nav -->
@@ -305,20 +325,27 @@
 			<div class="subCon no-padding">
 				<ul class="search-subway-tab">
 					<li class="search-subway-tab-item">
-						<button class="search-subway-tab-btn on">직접검색</button>
+						<button class="search-subway-tab-btn">직접검색</button>
 					</li>
 					<li class="search-subway-tab-item">
-						<button class="search-subway-tab-btn">노선도보기</button>
+						<button class="search-subway-tab-btn on">노선도보기</button>
 					</li>
 				</ul>
 
 				<div class="search-wrap">
 
-					<div class="input-search-wrap">
-						<input type="text" class="input-search" value="역명을 입력해주세요" />
-						<button type="button" class="btn-search">검색</button>
-					</div>
+					<select class="select-search mt10">
+						<option>수도권</option>
+						<option>수도권</option>
+						<option>수도권</option>
+					</select>
 
+				</div>
+
+				<div class="subway-result-map-wrap">
+					<div class="subway-result-map">
+						<img src="../resource/images/temp/subway_map.jpg" alt="" style="display:block; width:100%;" />
+					</div>
 				</div>
 
 			</div>

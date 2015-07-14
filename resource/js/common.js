@@ -21,4 +21,9 @@ $(function() {
 		$(".dimmed").removeClass("on");
 		return false;	
 	});
+	$( ".layer-close" ).on("click", function(){
+		$("#layer-popup").css("display","none");
+		$(".dimmed-pop").css("display","none");
+	});
+
 });
