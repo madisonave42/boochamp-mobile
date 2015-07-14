@@ -7,6 +7,11 @@
   border-bottom:1px solid #d9d9d9;
 }
 
+.search-wrap.inner{
+  padding:0 0 30px 0;
+  border:0;
+}
+
 .search-wrap .input-search-wrap{
   position:relative;
 }
@@ -41,4 +46,39 @@
   border:5px solid #25aae1;
 
   background:url(../images/search/icon_select_search.png) no-repeat right center;
+}
+
+.search-result-list .search-result-item{
+  padding:28px 50px;
+  border-bottom:1px solid #d9d9d9;
+}
+
+.search-result-list .search-result-item a{
+  display:block;
+  font-size:24px;
+  text-align:left;
+}
+
+.search-result-table{
+  width:100%;
+}
+
+.search-result-table th,
+.search-result-table td{
+  height:80px;
+  line-height:80px;
+
+  font-size:24px;
+
+  border:1px solid #d9d9d9;
+}
+
+.search-result-table th{
+  font-weight:bold;
+  color:#222;
+  background:#f5f5f5;
+}
+
+.search-result-table .search-msg{
+  line-height:200px;
 }
