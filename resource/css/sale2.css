@@ -1,0 +1,97 @@
+.hr-table.blue-border{
+  border-top:2px solid #28a7e1;
+  border-bottom:0;
+}
+
+.hr-table.blue-border th,
+.hr-table.blue-border td{
+  border:1px solid #d9d9d9;
+}
+
+.hr-table.blue-border td{
+  padding:20px;
+}
+
+.vt-table.blue-border{
+  border-top:2px solid #28a7e1;
+  border-bottom:0;
+}
+
+.vt-table.blue-border th,
+.vt-table.blue-border td{
+  border:1px solid #d9d9d9;
+}
+
+.vt-table.blue-border td{
+  padding:20px;
+}
+
+.border-box{
+  font-size:22px;
+  line-height:1.6;
+  border:1px solid #d9d9d9;
+  border-top:2px solid #28a7e1;
+
+  overflow:hidden;
+}
+
+.part-title{
+  position:relative;
+}
+
+.table-title{
+  font-size:22px;
+  font-weight:bold;
+  text-align:left;
+  color:#666;
+  margin:0 0 10px 0;
+}
+
+.btn-box-toggle{
+  width:30px;
+  height:17px;
+
+  position:absolute;
+  top:15px;
+  right:15px;
+
+  text-indent:-99999em;
+
+  border:0;
+  background:url(../images/sale/btn_box_toggle.png) no-repeat;
+}
+
+.btn-box-toggle.close{
+  background-position:0 -23px;
+}
+
+.option-box{
+  padding:10px 15px;
+  overflow:hidden;
+}
+
+.option-item{
+  width:101px;
+  height:101px;
+
+  float:left;
+
+  margin:10px 5px;
+
+  text-indent:-99999em;
+  background:url(../images/sale/icon_option.png) no-repeat;
+}
+
+.btn-option-close{
+  display:block;
+  width:100%;
+
+  font-size:22px;
+  font-weight:bold;
+  line-height:60px;
+  text-align:center;
+  color:#fff;
+
+  border:0;
+  background:#666;
+}
