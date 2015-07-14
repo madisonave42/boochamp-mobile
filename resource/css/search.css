@@ -34,3 +34,39 @@
 .search-subway-tab-item:first-child .search-subway-tab-btn {border-right:1px solid #ccc;}
 .search-subway-tab-btn {position:relative; display:block; box-sizing:border-box; width:100%; height:70px; color:#666; font-size:24px; font-weight:bold; border:0; border-bottom:1px solid #ccc; background:#f5f5f5; text-align:center;}
 .search-subway-tab-btn.on{color:#25aae1; border-bottom:1px solid #fff; background:#fff;}
+
+/* subway search result */
+.subway-result-link {display:block; padding:29px 30px 29px 50px; border-bottom:1px solid #d9d9d9;}
+.subway-result-link:after {content:""; display:block; clear:both;}
+.subway-result-name {float:left; font-size:24px;}
+.subway-result-line-wrap {float:right;}
+.subway-result-line {float:left; margin:0 0 0 8px; padding:0 10px; height:30px; line-height:30px; font-size:22px; color:#fff; background:#003499; border-radius:15px;}
+.subway-result-line.metro-1 {background:#003499;}
+.subway-result-line.metro-2 {background:#37b42d;}
+.subway-result-line.metro-3 {background:#fb6c3d;}
+.subway-result-line.metro-4 {background:#3171d3;}
+.subway-result-line.metro-5 {background:#893bb6;}
+.subway-result-line.metro-6 {background:#9a4f11;}
+.subway-result-line.metro-7 {background:#606d00;}
+.subway-result-line.metro-8 {background:#e71e6e;}
+.subway-result-line.metro-9 {background:#bf9f1e;}
+.subway-result-line.metro-bundang {background:#edb217;}
+.subway-result-line.metro-incheon {background:#6691c9;}
+.subway-result-line.metro-sinbundang {background:#a8022d;}
+.subway-result-line.metro-gyeongui {background:#7dc4a5;}
+.subway-result-line.metro-gyeongchun {background:#26a97f;}
+.subway-result-line.metro-airport {background:#71b8e5;}
+.subway-result-line.metro-uijeongbu {background:#ff8e00;}
+.subway-result-line.metro-suin {background:#edb217;}
+.subway-result-line.metro-everline {background:#1d8405;}
+.subway-result-line.metro-jungang {background:#56c5d0;}
+.subway-result-line.busan-1 {background:#fb6c3d;}
+.subway-result-line.busan-2 {background:#26a97f;}
+.subway-result-line.busan-3 {background:#bf9f1e;}
+.subway-result-line.busan-4 {background:#3171d3;}
+.subway-result-line.busan-gimhae {background:#893bb6;}
+.subway-result-line.daegu-1 {background:#e71e6e;}
+.subway-result-line.daegu-2 {background:#37b42d;}
+.subway-result-line.gwangju-1 {background:#1d8405;}
+.subway-result-line.daejeon-1 {background:#37b42d;}
+
