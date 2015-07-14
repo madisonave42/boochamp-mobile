@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>부동산챔프</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="viewport" content="user-scalable=yes, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, width=device-width, target-densitydpi=medium-dpi" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link type="text/css" rel="stylesheet" href="../resource/css/common.css" media="all" />
+
+<!-- css -->
+<link type="text/css" rel="stylesheet" href="../resource/css/search.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../resource/css/search2.css" media="all" />
+
+
+<script type="text/javascript" src="../resource/js/lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../resource/js/common.js"></script>
+
+<!--[if lt IE 9]>
+<script src="../resource/js/lib/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div class="wrapperDiv" style="left:0px;">
+
+
+
+
+<!-- nav -->
+<div class="nav-warp">
+	<div class="nav-warp-con">
+		<div id="nav">
+			<h2 class="hc">메뉴</h2>
+			<div class="title-member">
+				<div class="name"><span>홍길동</span>님</div>
+				<div class="right-float">
+					<button type="button" class="left-float left btn-log white" style="width:150px">로그아웃</button>
+					<button type="button" class="btn-log blue" style="width:150px">My챔프</button>
+				</div>
+			</div>
+
+			<ul class="log-item">
+				<li>
+					<div>
+						<span>2</span>
+						<span>최근본매물</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span>0</span>
+						<span>관심매물</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span>15</span>
+						<span>최근검색</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span>1</span>
+						<span>문의내역</span>
+					</div>
+				</li>
+			</ul>
+
+			<div class="life-item">
+				<ul>
+					<li>
+						<ul class="depth1">
+							<li>
+								<a href="">
+									<span class="icon m01">아이콘01</span>
+									<span class="title">주거</span>
+									<span class="icon btn on">버튼</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="depth2">
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">주거전체</span>
+									<span class="icon btn on">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">아파트</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">주상복합</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">오피스텔</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">도시형 생활주택</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">단독/다가구</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">다세대(빌라/연립)</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">상가주택</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="icon m00">아이콘</span>
+									<span class="title">고급주택</span>
+									<span class="icon btn">버튼</span>
+								</a>
+							</li>
+							<li>
+								<button type="button" class="yellow-button" style="width:95%">매물보기</button>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m02">아이콘02</span>
+									<span class="title">아파트(단지)</span>
+									<span class="icon btn-plus">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m03">아이콘03</span>
+									<span class="title">오피스텔(단지)</span>
+									<span class="icon btn-arrow">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m04">아이콘04</span>
+									<span class="title">사무실</span>
+									<span class="icon btn-arrow">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m05">아이콘05</span>
+									<span class="title">상가∙점포</span>
+									<span class="icon btn-plus">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m06">아이콘06</span>
+									<span class="title">건물</span>
+									<span class="icon btn-plus">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m07">아이콘07</span>
+									<span class="title">공장∙창고</span>
+									<span class="icon btn-plus">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m08">아이콘08</span>
+									<span class="title">토지∙임야</span>
+									<span class="icon btn-arrow">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="depth">
+							<li>
+								<a href="">
+									<span class="icon m09">아이콘09</span>
+									<span class="title">실거래가</span>
+									<span class="icon btn-arrow">버튼</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button type="button" class="bottom-button" style="width:50%">공지사항</button>
+						<button type="button" class="bottom-button" style="width:50%">FAQ</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div><a href="" class="nav-close"><img src="../resource/images/btn/nav-close.png" alt="닫기"></a></div>
+	</div>
+
+</div>
+<div class="dimmed"></div>
+
+
+
+
+<!-- 헤더 -->
+	<header>
+	<div class="header">
+		<h1><a href=""><img src="../resource/images/icon/logo.png" alt="부동산 챔프"></a></h1>
+		<p class="menuBtn"><a href="javascript:"><img src="../resource/images/btn/btn_gnb.png" alt="gnb메뉴열림"></a></p>
+
+		<!-- search -->
+		<div class="form-search-button">
+			<div class="relative">
+				<label for="" class="hc">지역, 지하철, 단지찾기 등</label>
+				<div class="words">지역, 지하철, 단지찾기 등</div>
+				<button type="button" class="re_search_button"><img src="../resource/images/btn/btn_serch.png" alt=""></button>
+			</div>
+		</div>
+		<!-- //search -->
+
+	</div>
+	</header>
+	<!-- //헤더 -->
+
+	<!-- 컨텐츠 -->
+	<section>
+	<div class="container">
+		<div class="subBody">
+			<h2 class="hc">통합검색</h2>
+			<div class="title-tab">
+				<ul class="title-tab-list">
+					<li class="title-tab-item">
+						<button type="button" class="title-tab-btn">지역</button>
+					</li>
+					<li class="title-tab-item">
+						<button type="button" class="title-tab-btn">지하철</button>
+					</li>
+					<li class="title-tab-item">
+						<button type="button" class="title-tab-btn on">단지</button>
+					</li>
+					<li class="title-tab-item">
+						<button type="button" class="title-tab-btn">교육</button>
+					</li>
+					<li class="title-tab-item">
+						<button type="button" class="title-tab-btn">보육</button>
+					</li>
+				</ul>
+				<a href="" class="btnBack"><img src="../resource/images/btn/btn_back.png" alt="이전가기"></a>
+			</div>
+
+
+			<div class="subCon no-padding">
+
+				<div class="search-wrap">
+
+					<div class="input-search-wrap">
+						<input type="text" class="input-search" value="단지명을 입력해주세요" />
+						<button type="button" class="btn-search">검색</button>
+					</div>
+
+					<select class="select-search mt10">
+						<option>서울</option>
+						<option>서울</option>
+						<option>서울</option>
+					</select>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</section>
+	<!-- //컨텐츠 -->
+
+	<!-- 풋터 -->
+	<footer>
+		<div class="footer-address">
+		서울시 강남구 영동대로 702(청담동)화천회관빌딩 4층<br />
+		1661-0903(평일 09:00~18:00) / ytp@ytp.co.kr<br />
+		</div>
+		<div class="copyright">Copyrightⓒ2015 <span class="blue">YTPartner</span>s Co., Ltd. All rights reserved.</div>
+	</footer>
+	<!-- //풋터 -->
+</div>
+
+</body>
+</html>
