@@ -262,7 +262,7 @@ legend, caption{display:none; clear:both}
 input[type=checkbox].css-checkbox {position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;}
 input[type=checkbox].css-checkbox + label.css-label {
 	padding-left:37px;
-	height:30px; 
+	height:30px;
 	display:inline-block;
 	background-repeat:no-repeat;
 	background-position: 0 0;
@@ -374,62 +374,6 @@ label.css-label{
   border-bottom: 0;
 }
 .hr-table td .address{display:block; padding:5px 19px 20px; line-height:35px}
-
-.vt-table{
-  width: 100%;
-  table-layout: fixed;
-  border-top: 4px solid #222;
-  border-bottom: 2px solid #222;
-}
-
-.vt-table th {
-  height: 80px;
-  font-weight: bold;
-  color: #222;
-  border-left: 2px solid #dcdcdc;
-  border-bottom: 2px solid #dcdcdc;
-  background: #f9f9f9;
-  font-size:24px;
-}
-.vt-table th:first-child {
-  border-left: 0;
-}
-.vt-table th.last {
-  border-bottom: 0;
-}
-.vt-table th.left-border {
-  border-left: 2px solid #dcdcdc;
-}
-.vt-table th.center {
-  padding: 0;
-  text-align: center;
-}
-.vt-table td {
-  padding:10px;
-  color: #999;
-  border-bottom: 2px solid #dcdcdc;
-  border-left: 2px solid #dcdcdc;
-  font-size:22px;
-  line-height:30px;
-}
-.vt-table td:first-child{
-  border-left:0;
-}
-.vt-table td.td-padding {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.vt-table td.last {
-  border-bottom: 0;
-}
-.vt-table td.center {
-  padding: 0;
-  text-align: center;
-}
-.vt-table td .input.full-width,
-.vt-table td .textarea.full-width {
-  width: 95%;
-}
 
 .select {
   border: 1px solid #CDCDCD;
@@ -645,7 +589,7 @@ label.css-label{
 
 
 /* Layout */
-.wrapperDiv{position:relative; /*overflow:hidden; */} 
+.wrapperDiv{position:relative; /*overflow:hidden; */}
 .container{position:relative; width:100%; height:100%}
 .wrap{position:relative; width:100%}
 
@@ -694,3 +638,77 @@ footer .blue{color:#25aae1;}
 
 
 
+
+
+
+
+
+
+/* addon */
+.vt-table{
+  width: 100%;
+  table-layout: fixed;
+  border-top: 4px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+.vt-table th {
+  height: 80px;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+  color: #222;
+  border-left: 2px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
+  background: #f9f9f9;
+  font-size:24px;
+}
+.vt-table th:first-child {
+  border-left: 0;
+}
+.vt-table th.last {
+  border-bottom: 0;
+}
+.vt-table th.left-border {
+  border-left: 2px solid #dcdcdc;
+}
+.vt-table th.center {
+  padding: 0;
+  text-align: center;
+}
+.vt-table td {
+  padding:10px;
+  color: #999;
+  border-bottom: 2px solid #dcdcdc;
+  border-left: 2px solid #dcdcdc;
+  font-size:24px;
+  line-height:30px;
+  text-align:left;
+}
+.vt-table td:first-child{
+  border-left:0;
+}
+.vt-table td.td-padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.vt-table td.last {
+  border-bottom: 0;
+}
+.vt-table td.center {
+  padding: 0;
+  text-align: center;
+}
+.vt-table td .input.full-width,
+.vt-table td .textarea.full-width {
+  width: 95%;
+}
+
+.subBody .hc {
+  position:absolute;
+  padding:0;
+}
+
+.subCon.no-padding {
+  padding:0;
+}
