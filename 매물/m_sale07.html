@@ -16,6 +16,7 @@
 <script type="text/javascript" src="../resource/js/lib/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="../resource/js/lib/jquery.touchslider.js"></script>
 <script type="text/javascript" src="../resource/js/common.js"></script>
+<script type="text/javascript" src="../resource/js/common2.js"></script>
 
 <!--[if lt IE 9]>
 <script src="../resource/js/lib/html5shiv.js"></script>
@@ -315,13 +316,13 @@
 
 				</div>
 
-				<div class="address">충청남도 고양시 일산동구 정발산동 신사동 압구정KCC 101동 2단지 123-123</div>
+				<div class="sale-address">충청남도 고양시 일산동구 정발산동 신사동 압구정KCC 101동 2단지 123-123</div>
 
 				<div class="sale-state">
 
-					<span class="sale-floor">해당층/총층  15층(고층)/16층</span>
+					<span class="sale-floor"><span class="title">해당층/총층</span>  15층(고층)/16층</span>
 
-					<span class="sale-room-num">방/욕실  2개/1개</span>
+					<span class="sale-room-num"><span class="title">방/욕실</span>  2개/1개</span>
 
 				</div>
 
@@ -356,9 +357,57 @@
 					});
 				</script>
 
-				<h3 class="part-title">기본 정보</h3>
+				<div class="part-mid mt10 pdlr30">
+					<table class="hr-table blue-border">
+						<caption class="hide">기본 정보</caption>
+						<colgroup>
+							<col style="width:40%;" />
+							<col />
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">방향</th>
+							<td>남</td>
+						</tr>
+						<tr>
+							<th scope="row">방/욕실</th>
+							<td>5개/2개</td>
+						</tr>
+						<tr>
+							<th scope="row">현관구조</th>
+							<td>계단식</td>
+						</tr>
+						<tr>
+							<th scope="row">내부구조</th>
+							<td>단층</td>
+						</tr>
+						<tr>
+							<th scope="row">베란다/확장유무</th>
+							<td>유/비확장</td>
+						</tr>
+						<tr>
+							<th scope="row">동일면적세대수</th>
+							<td>288세대</td>
+						</tr>
+						<tr>
+							<th scope="row">세대주차대수</th>
+							<td>1대</td>
+						</tr>
+						<tr>
+							<th scope="row">수영장</th>
+							<td>유</td>
+						</tr>
+						<tr>
+							<th scope="row">정원</th>
+							<td>무</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
 
-				<div class="part-mid">
+				<h3 class="part-title pdlr30">기본 정보</h3>
+
+				<div class="part-mid pdlr30">
 					<table class="hr-table blue-border">
 						<caption class="hide">기본 정보</caption>
 						<colgroup>
@@ -406,9 +455,9 @@
 					</table>
 				</div>
 
-				<h3 class="part-title">상세 정보</h3>
+				<h3 class="part-title pdlr30">상세 정보</h3>
 
-				<div class="part-mid">
+				<div class="part-mid pdlr30">
 					<table class="hr-table blue-border">
 						<caption class="hide">기본 정보</caption>
 						<colgroup>
@@ -452,9 +501,9 @@
 					</table>
 				</div>
 
-				<h3 class="part-title">건물 정보</h3>
+				<h3 class="part-title pdlr30">건물 정보</h3>
 
-				<div class="part-mid">
+				<div class="part-mid pdlr30">
 					<table class="hr-table blue-border">
 						<caption class="hide">기본 정보</caption>
 						<colgroup>
@@ -498,11 +547,13 @@
 					</table>
 				</div>
 
-				<h3 class="part-title">
+				<h3 class="part-title pdlr30">
 					<span>옵션 정보</span>
-					<button type="button" class="btn-box-toggle">접기</button>
+					<button type="button" class="btn-box-toggle close">접기</button>
 				</h3>
-				<div class="border-box">
+
+				<div class="part-mid pdlr30">
+					<div class="border-box close">
 
 					<div class="option-box">
 						<div class="option-item">쇼파</div>
@@ -527,12 +578,15 @@
 					<button type="button" class="btn-option-close">닫기</button>
 
 				</div>
+				</div>
 
-				<h3 class="part-title">
+				<h3 class="part-title pdlr30">
 					<span>매물 설명</span>
-					<button type="button" class="btn-box-toggle">접기</button>
+					<button type="button" class="btn-box-toggle close">접기</button>
 				</h3>
-				<div class="border-box">
+
+				<div class="part-mid pdlr30">
+					<div class="border-box close">
 
 					<div class="option-box">
 						강남8학군 위치 좋은 전망 좋은 집. 정말 좋은 집입니다.<br />
@@ -540,10 +594,11 @@
 					</div>
 
 				</div>
+				</div>
 
-				<h3 class="part-title">대출/비용</h3>
+				<h3 class="part-title pdlr30">대출/비용</h3>
 
-				<div class="part-mid">
+				<div class="part-mid pdlr30">
 					<h4 class="table-title">&lt;가격정보&gt;</h4>
 					<table class="hr-table blue-border inner-table">
 						<caption class="hide">기본 정보</caption>
@@ -568,7 +623,7 @@
 					</table>
 				</div>
 
-				<div class="part-mid">
+				<div class="part-mid pdlr30">
 					<h4 class="table-title">&lt;담보대출&gt;</h4>
 					<table class="vt-table blue-border inner-table">
 						<caption class="hide">기본 정보</caption>
@@ -597,7 +652,7 @@
 					</table>
 				</div>
 
-				<div class="part-mid">
+				<div class="part-mid pdlr30">
 					<h4 class="table-title">&lt;세금/수수료&gt;</h4>
 					<table class="vt-table blue-border inner-table">
 						<caption class="hide">기본 정보</caption>
@@ -626,12 +681,12 @@
 					</table>
 				</div>
 
-				<h3 class="part-title">
+				<h3 class="part-title pdlr30">
 					<span>실거래가</span>
 					<a href="#" class="btn-box-link">이동</a>
 				</h3>
 
-				<div class="part-mid">
+				<div class="part-mid pdlr30">
 					<table class="vt-table blue-border">
 						<caption class="hide">실거래가</caption>
 						<colgroup>
@@ -673,9 +728,9 @@
 					<p class="msg">※ 부동산챔프의 실거래가는 국토해양부에서 공개된 데이터를 통해 제공하고 있습니다.</p>
 				</div>
 
-				<h3 class="part-title">주변정보</h3>
+				<h3 class="part-title pdlr30">주변정보</h3>
 
-				<div class="part-mid">
+				<div class="part-mid pdlr30">
 					<table class="hr-table blue-border">
 						<caption class="hide">주변정보</caption>
 						<colgroup>
@@ -703,7 +758,7 @@
 					</table>
 				</div>
 
-				<div class="part-bottom30">
+				<div class="part-bottom30 pdlr30">
 					<button type="button" class="btn-fill blue">주변 유사매물 보기</button>
 					<button type="button" class="btn-fill mt10">허위 매물 신고하기</button>
 				</div>

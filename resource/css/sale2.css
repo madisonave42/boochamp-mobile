@@ -1,10 +1,150 @@
+.deal-state{
+  height:80px;
+  padding:0 30px;
+
+  line-height:80px;
+  font-size:22px;
+  font-weight:bold;
+  color:#666;
+  text-align:left;
+
+  border-bottom:1px solid #d9d9d9;
+  box-sizing:border-box;
+}
+
+.deal-state .dealing{
+  padding:0 20px 0 0;
+  margin:0 20px 0 0;
+
+  border-right:1px solid #d9d9d9;
+}
+
+.deal-state .deal-number{
+  color:#ed1c24;
+}
+
+.estate-agent{
+
+  padding:30px;
+  font-size:22px;
+  color:#666;
+  text-align:left;
+
+  line-height:1.6;
+
+  border-bottom:1px solid #d9d9d9;
+  background:#fffbea;
+
+}
+
+.estate-agent .agent-name{
+  font-size:30px;
+  font-weight:bold;
+  color:#f8b62b;
+}
+
+.deal-list-section{
+  padding:30px;
+  background:#e8e8e8;
+}
+
+.deal-list-item{
+  position:relative;
+  padding:20px;
+  border:2px solid #d9d9d9;
+  background:#fff;
+
+  overflow:hidden;
+}
+
+.deal-list-item .deal-category{
+  position:absolute;
+  top:25px;
+  left:25px;
+
+  font-size:22px;
+  font-weight:bold;
+  color:#ee2830;
+  border:2px solid #ee2830;
+  background:#fff;
+}
+
+.deal-list-item .list-image{
+  float:left;
+  width:34%;
+}
+
+.deal-list-item .list-image img{
+  width:100%;
+}
+
+.deal-list-item .list-text{
+  width:66%;
+  float:left;
+
+  padding:0 0 0 20px;
+  text-align:left;
+
+  box-sizing:border-box;
+}
+
+.deal-list-item .list-text .price{
+  padding:0 0 10px 0;
+  font-size:25px;
+  font-weight:bold;
+  color:#222;
+}
+
+.deal-list-item .list-text .price-number{
+  font-size:24px;
+  color:#25aae1;
+}
+
+.deal-list-item .list-text .address{
+  padding:0 0 10px 0;
+  font-size:24px;
+  color:#666;
+
+  white-space:nowrap;
+
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.deal-list-item .list-text .extent{
+  padding:0 0 10px 0;
+  font-size:24px;
+  color:#666;
+}
+
+.deal-list-item .list-text .status{
+  padding:0 0 10px 0;
+  font-size:24px;
+  color:#666;
+}
+
+.deal-list-item .list-text .dealer .deal-sort{
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .sale-sequence{
   height:72px;
+  padding:0 30px;
   line-height:72px;
 
   font-size:22px;
   color:#666;
+  text-align:left;
 
   border-top:1px solid #d9d9d9;
   border-bottom:1px solid #d9d9d9;
@@ -13,28 +153,92 @@
 
 .sale-sequence .sequence-item{
   display:inline-block;
+  margin:0 0 0 15px;
+}
+
+.sale-sequence .sequence-item:first-child{
+  margin:0;
 }
 
 .sale-sequence .sequence-item .sequence-item-title,
 .sale-sequence .sequence-item .sequence-item-number{
-
   display:inline-block;
-
 }
 
 .sale-sequence .sequence-item .sequence-item-title{
-
   padding:3px 10px;
-
+  margin:0;
   font-weight:bold;
   line-height:normal;
-
   border:2px solid #666;
+}
+
+.sale-detail{
+  height:94px;
+
+  padding:0 30px;
+  line-height:94px;
+
+  font-size:32px;
+  font-weight:bold;
+  text-align:left;
+
+  border-bottom:1px solid #d9d9d9;
+}
+
+.sale-detail .sale-category{
+  display:inline-block;
+  position:relative;
+  top:-3px;
+  font-size:22px;
+
+  padding:3px 5px;
+  margin:0 5px 0 0;
+  font-weight:bold;
+  line-height:normal;
+  color:#ee2830;
+  border:2px solid #ee2830;
+}
+
+.sale-detail .sale-condition{
+  margin:0 5px;
+  color:#222;
+}
+
+.sale-detail .sale-price{
+  color:#25aae1;
+}
+
+.sale-address{
+  padding:30px;
+  font-size:26px;
+  font-weight:bold;
+  line-height:1.6;
+  text-align:left;
+  color:#222;
+}
+
+.sale-state{
+  padding:0 30px 30px 30px;
+
+  font-size:22px;
+  text-align:left;
+}
+
+.sale-state .sale-floor{
+  padding:0 20px 0 0;
+  margin:0 20px 0 0;
+
+  border-right:1px solid #d9d9d9;
 }
 
 
 .touchslider{
   width:100%;
+  position:relative;
+  padding:0 30px;
+
+  box-sizing:border-box;
 }
 
 .touchslider-viewport{
@@ -49,6 +253,28 @@
 
 .touchslider-item img{
   width:100%;
+}
+
+.touchslider-prev,
+.touchslider-next{
+  width:54px;
+  height:54px;
+
+  position:absolute;
+  top:50%;
+  margin:-27px 0 0 0;
+
+  text-indent:-99999em;
+
+  background:url(../images/sale/btn_sale_image_move.png) no-repeat;
+}
+
+.touchslider-prev{
+  left:30px;
+}
+.touchslider-next{
+  right:30px;
+  background-position:-54px 0;
 }
 
 .hr-table.blue-border{
@@ -96,6 +322,10 @@
   overflow:hidden;
 }
 
+.border-box.close{
+  height:0;
+}
+
 .part-title{
   position:relative;
 }
@@ -114,7 +344,7 @@
 
   position:absolute;
   top:15px;
-  right:15px;
+  right:30px;
 
   text-indent:-99999em;
 
@@ -128,7 +358,7 @@
 
   position:absolute;
   top:15px;
-  right:15px;
+  right:30px;
 
   text-indent:-99999em;
 
