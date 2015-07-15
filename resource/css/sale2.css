@@ -1,4 +1,36 @@
 
+.sale-sequence{
+  height:72px;
+  line-height:72px;
+
+  font-size:22px;
+  color:#666;
+
+  border-top:1px solid #d9d9d9;
+  border-bottom:1px solid #d9d9d9;
+  background:#f5f5f5;
+}
+
+.sale-sequence .sequence-item{
+  display:inline-block;
+}
+
+.sale-sequence .sequence-item .sequence-item-title,
+.sale-sequence .sequence-item .sequence-item-number{
+
+  display:inline-block;
+
+}
+
+.sale-sequence .sequence-item .sequence-item-title{
+
+  padding:3px 10px;
+
+  font-weight:bold;
+  line-height:normal;
+
+  border:2px solid #666;
+}
 
 
 .touchslider{
@@ -18,9 +50,6 @@
 .touchslider-item img{
   width:100%;
 }
-
-
-
 
 .hr-table.blue-border{
   border-top:2px solid #28a7e1;
