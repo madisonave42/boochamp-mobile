@@ -1,3 +1,27 @@
+
+
+
+.touchslider{
+  width:100%;
+}
+
+.touchslider-viewport{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+.touchslider-item{
+  width:100%;
+}
+
+.touchslider-item img{
+  width:100%;
+}
+
+
+
+
 .hr-table.blue-border{
   border-top:2px solid #28a7e1;
   border-bottom:0;
