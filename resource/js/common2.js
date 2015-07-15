@@ -20,4 +20,55 @@ $(function() {
 		}
 	})();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// 매울 상세 기능
+
+	$('.btn-box-toggle').data('toggle', 'false').on('click', function(){
+
+		if( $(this).data('toggle') == 'false' ){
+			$(this).removeClass('close').parent('.part-title').next('.part-mid').children('.border-box').removeClass('close');
+			$(this).data('toggle', 'true');
+		} else {
+			$(this).addClass('close').parent('.part-title').next('.part-mid').children('.border-box').addClass('close');
+			$(this).data('toggle', 'false');
+		}
+
+	});
+
+	$('.btn-option-close').on('click', function(){
+
+		var node = $(this).parents('.border-box').addClass('close').parents('.part-mid').prev('.part-title').children('.btn-box-toggle');
+
+		if( node.data('toggle') == 'true' ){
+			node.addClass('close').data('toggle', 'false');
+		}
+
+	});
+
+
 });

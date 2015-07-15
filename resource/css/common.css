@@ -710,5 +710,9 @@ footer .blue{color:#25aae1;}
 }
 
 .subCon.no-padding {
-  padding:0;
+  padding:0 0 30px 0;
+}
+
+.pdlr30{
+  padding:0 30px;
 }
