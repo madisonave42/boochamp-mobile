@@ -52,10 +52,15 @@
 .deal-list-item{
   position:relative;
   padding:20px;
+  margin:0 0 15px 0;
   border:2px solid #d9d9d9;
   background:#fff;
 
   overflow:hidden;
+}
+
+.deal-list-item.blue-border{
+  border:2px solid #25aae1;
 }
 
 .deal-list-item .deal-category{
@@ -75,13 +80,11 @@
   width:34%;
 }
 
-.deal-list-item .list-image img{
-  width:100%;
-}
-
 .deal-list-item .list-text{
   width:66%;
   float:left;
+
+  position:relative;
 
   padding:0 0 0 20px;
   text-align:left;
@@ -124,8 +127,104 @@
   color:#666;
 }
 
-.deal-list-item .list-text .dealer .deal-sort{
+.deal-list-item .list-text .dealer{
+  position:relative;
+  overflow:hidden;
+}
 
+
+.deal-list-item .list-text .deal-sort{
+  display:block;
+  height:35px;
+
+  padding:3px 10px;
+
+  float:left;
+
+  font-size:22px;
+  font-weight:bold;
+
+  color:#fff;
+
+  background:#c2ccd0;
+
+  box-sizing:border-box;
+}
+
+.deal-list-item .list-text .dealer .dealer-name{
+  display:block;
+  width:50%;
+  margin:0 0 0 10px;
+  font-size:22px;
+
+  line-height:35px;
+
+  float:left;
+
+  white-space:nowrap;
+
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.deal-list-item .list-text .buttons{
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
+.deal-list-item .list-text .buttons .favorite,
+.deal-list-item .list-text .buttons .more{
+  display:inline-block;
+
+  width:32px;
+  height:31px;
+
+  text-indent:-99999em;
+
+  border:0;
+  background:url(../images/sale/btn_deal_list_menu.png) no-repeat;
+
+}
+
+.deal-list-item .list-text .buttons .more{
+  position:relative;
+  top:-1px;
+  margin:0 0 0 20px;
+  padding:0;
+  background-position:-38px 0;
+}
+
+.deal-list-item .list-text .buttons .favorite.on{
+  background-position:0 -43px;
+}
+
+.deal-list-item .list-text .buttons .more.on{
+  background-position:-38px -43px;
+}
+
+.deal-list-item .list-text .more-menu{
+  width:178px;
+
+  position:absolute;
+  top:35px;
+  right:-22px;
+
+  font-size:22px;
+  color:#666;
+
+  background:#fff;
+}
+
+.deal-list-item .list-text .more-menu .item{
+  display:block;
+  padding:15px 20px;
+  text-align:left;
+  border:2px solid #d9d9d9;
+}
+
+.deal-list-item .list-text .more-menu .item:first-child{
+  border-bottom:0;
 }
 
 
